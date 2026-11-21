@@ -47,7 +47,8 @@ The app selects a page from the browser pathname in `src/main.jsx`. When deployi
 ```text
 public/
   assets/             Landing page portrait images
-  favicon.svg         Senitel fingerprint tab icon
+  favicon.png         Senitel fingerprint tab icon
+  favicon.ico         Browser-compatible fingerprint tab icon
 src/
   App.jsx             Landing page
   Dashboard.jsx       Dashboard demo

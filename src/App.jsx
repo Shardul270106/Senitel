@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDownRight, ArrowRight, ArrowUpRight, Fingerprint, Heart, Menu, Plus, ShieldCheck } from 'lucide-react';
+import { ArrowDownRight, ArrowRight, ArrowUpRight, Fingerprint, Heart, Menu, ShieldCheck } from 'lucide-react';
 
 const features = [
   { number: '01', id: 'multimodal-forensics', title: 'Multimodal Forensics', text: 'Analyze voice, video, email, and document evidence with verifiable file provenance.' },
@@ -145,7 +145,24 @@ function LandingPage() {
       <section className="approach-section" id="approach"><div className="page-wrap approach-inner"><div className="section-kicker"><span>02</span><span className="kicker-line" /> ACTION-BOUND AUTHORIZATION</div><div className="approach-grid"><h2>Authenticity is<br />only the <em>start.</em></h2><div className="approach-copy"><p>Even genuine communication can be compromised or coerced. Trustlock binds sensitive actions to explicit limits, independent approval, and verifiable evidence.</p><a href="#identity" className="text-link">Explore the security layers <ArrowRight size={15} /></a></div></div><div className="approach-meta"><span><ShieldCheck size={15} /> MEDIA ≠ IDENTITY ≠ INTENT ≠ AUTHORIZATION</span><span>DESIGNED FOR HIGH-TRUST ACTIONS</span></div></div></section>
       <section className="contact-section page-wrap" id="contact"><div className="section-kicker"><span>03</span><span className="kicker-line" /> SECURE THE NEXT ACTION</div><div className="contact-row"><h2>Make trust<br /><em>verifiable.</em></h2><div className="contact-cta"><p>Communication risk analysis with action-bound authorization.</p><a className="primary-button" href="#top">Back to the beginning <ArrowRight size={16} /></a></div></div></section>
     </main>
-    <footer className="footer page-wrap"><div className="footer-brand"><Plus size={17} /><span>Trust every signal.</span><span className="footer-muted">Senitel Trustlock · Action-Bound Authorization</span></div><div className="footer-coordinate"><span>MEDIA ≠ IDENTITY ≠ INTENT ≠ ACTION</span><span className="footer-heart">BUILT FOR TRUST <Heart size={12} /></span></div><div className="footer-bottom"><a className="wordmark footer-wordmark" href="#top"><span className="brand-mark"><Fingerprint size={18} strokeWidth={1.5} /></span>senitel<span className="wordmark-dot">.</span></a><span>© 2026 SENITEL TRUSTLOCK</span><span>SECURE BY DESIGN</span></div></footer>
+    <footer className="site-footer">
+      <div className="site-footer-inner">
+        <div className="site-footer-main">
+          <div className="site-footer-brand">
+            <a className="wordmark site-footer-wordmark" href="#top" aria-label="Senitel Trustlock home"><span className="brand-mark"><Fingerprint size={20} strokeWidth={1.5} /></span>senitel<span className="wordmark-dot">.</span></a>
+            <p>Communication risk, under control.</p>
+            <a className="site-footer-cta" href="/docs">Explore Trustlock <ArrowUpRight size={15} /></a>
+          </div>
+          <nav className="site-footer-nav" aria-label="Footer navigation">
+            <div><h2>Explore</h2><a href="#identity">Capabilities</a><a href="#approach">Authorization</a><a href="#contact">Evidence</a></div>
+            <div><h2>Trustlock</h2><a href="/docs#multimodal-forensics">Forensics</a><a href="/docs#intent-and-coercion">Intent & coercion</a><a href="/docs#verifiable-evidence">Verifiable evidence</a></div>
+            <div><h2>Product</h2><a href="/docs">Documentation</a><a href="/dashboard">Open dashboard</a><a href="#top">Back to top <ArrowUpRight size={12} /></a></div>
+          </nav>
+        </div>
+        <div className="site-footer-principle"><span>MEDIA ≠ IDENTITY ≠ INTENT ≠ AUTHORIZATION</span><span>TRUST EVERY SIGNAL <Heart size={12} /></span></div>
+        <div className="site-footer-bottom"><span>© 2026 SENITEL TRUSTLOCK</span><span>ACTION-BOUND AUTHORIZATION</span></div>
+      </div>
+    </footer>
   </>;
 }
 

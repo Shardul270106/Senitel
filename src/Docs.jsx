@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, FileAudio2, FileText, Fingerprint, LockKeyhole, ShieldCheck, Waves } from 'lucide-react';
+import { Activity, ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, FileAudio2, FileText, Fingerprint, LockKeyhole, ShieldCheck, Waves } from 'lucide-react';
 import './docs.css';
 
 const documentation = [

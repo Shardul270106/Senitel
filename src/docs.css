@@ -2,3 +2,45 @@
 @media(max-width:900px){.docs-shell{grid-template-columns:175px minmax(0,1fr);gap:30px}.docs-sidebar nav a{font-size:9px}.docs-process-steps{gap:8px}.docs-process-steps article>p{font-size:8px}}
 @media(max-width:650px){.docs-header{height:55px;padding:0 14px}.docs-back{font-size:0;gap:0}.docs-back svg{width:17px;height:17px}.docs-brand{font-size:16px}.docs-dashboard-link{padding:7px;font-size:0}.docs-dashboard-link svg{width:15px;height:15px}.docs-shell{width:calc(100% - 28px);display:block}.docs-sidebar{position:static;max-height:none;overflow:visible;padding:14px 0 10px;border-bottom:1px solid var(--docs-line)}.docs-sidebar>.docs-side-label:first-child,.docs-aside-note{display:none}.docs-overview-link{display:none}.docs-capability-label{margin:0;padding:0 0 8px}.docs-sidebar nav{display:flex;gap:5px;overflow-x:auto;padding-bottom:3px}.docs-sidebar nav a{flex:0 0 auto;min-height:29px;gap:5px;padding:4px 7px;border:1px solid rgba(247,249,250,.09);font-size:8px;white-space:nowrap}.docs-sidebar nav a span{width:auto;font-size:6px}.docs-main{padding-top:28px}.docs-hero h1{font-size:clamp(39px,12vw,58px)}.docs-hero>p{font-size:11px}.docs-hero-meta{font-size:6px;flex-direction:column;margin-top:24px}.docs-process{padding:24px 0}.docs-process h2,.docs-capabilities>h2{font-size:19px}.docs-process-steps{grid-template-columns:1fr 1fr;gap:16px}.docs-process-steps>svg{display:none}.docs-process-steps article>p{font-size:9px}.docs-feature{padding:17px 14px 14px}.docs-feature h3{font-size:19px}.docs-feature-summary{font-size:10px}.docs-detail-grid{grid-template-columns:1fr;gap:7px}.docs-detail-grid>div{padding:9px 10px}.docs-detail-grid>div>p{font-size:9px}.docs-footer{font-size:6px;flex-wrap:wrap}.docs-footer>span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){.docs-page *,.docs-page *::before,.docs-page *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Documentation typography: keep labels quiet while making reading copy comfortable. */
+.docs-back,.docs-dashboard-link{font-size:11px}
+.docs-side-label,.docs-eyebrow,.docs-section-kicker{font-size:10px}
+.docs-overview-link,.docs-sidebar nav a{font-size:12px}
+.docs-sidebar nav a span{font-size:8px}
+.docs-aside-note p{font-size:10px}
+.docs-hero>p{font-size:16px}
+.docs-hero-meta{font-size:9px}
+.docs-process h2,.docs-capabilities>h2{font-size:25px}
+.docs-process-steps article>span{font-size:9px}
+.docs-process-steps article>b{font-size:14px}
+.docs-process-steps article>p{font-size:12px}
+.docs-feature-number{font-size:10px}
+.docs-feature-type{font-size:8px}
+.docs-feature-summary{font-size:14px}
+.docs-detail-grid>div>b{font-size:9px}
+.docs-detail-grid>div>p{font-size:12px}
+.docs-back-top{font-size:10px}
+.docs-footer{font-size:9px}
+
+@media(max-width:900px){
+  .docs-sidebar nav a{font-size:11px}
+  .docs-process-steps article>p{font-size:11px}
+}
+
+@media(max-width:650px){
+  .docs-side-label,.docs-eyebrow,.docs-section-kicker{font-size:9px}
+  .docs-sidebar nav a{font-size:10px}
+  .docs-sidebar nav a span{font-size:7px}
+  .docs-hero>p{font-size:14px}
+  .docs-hero-meta{font-size:8px}
+  .docs-process h2,.docs-capabilities>h2{font-size:22px}
+  .docs-process-steps article>b{font-size:13px}
+  .docs-process-steps article>p{font-size:12px}
+  .docs-feature-number{font-size:9px}
+  .docs-feature-type{font-size:7px}
+  .docs-feature-summary{font-size:13px}
+  .docs-detail-grid>div>b{font-size:9px}
+  .docs-detail-grid>div>p{font-size:12px}
+  .docs-footer{font-size:8px}
+}
